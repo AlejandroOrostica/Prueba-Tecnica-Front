@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <shared-toolbar/>
+    <v-main>
+      <shared-sidebar/>
+      <router-view/>
+    </v-main>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import SharedSidebar from '@/components/shared/sidebar'
+import SharedToolbar from '@/components/shared/toolbar'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
-    HelloWorld,
+    'shared-sidebar': SharedSidebar,
+    'shared-toolbar': SharedToolbar
   },
+
+  data: () => ({
+    //
+  }),
 };
 </script>
