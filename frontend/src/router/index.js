@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import Products from "../views/Products.vue";
 import Logs from "../views/Logs.vue";
+import AddProduct from "../views/AddProduct.vue";
+import EditProduct from "../views/EditProduct.vue";
 
 
 Vue.use(VueRouter);
@@ -29,6 +31,16 @@ const routes = [
         path: "logs",
         name: "Logs",
         component: Logs,
+      },
+      {
+        path: "add",
+        name: "Add",
+        component: AddProduct,
+      },
+      {
+        path: "edit",
+        name: "Edit",
+        component: EditProduct,
       }
     ]
   },
