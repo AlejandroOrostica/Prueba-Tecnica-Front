@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import LoginService from '@/services/loginService'
+import LoginService from '@/services/mainServices'
 
 export default {
    name: 'Login',
@@ -58,7 +58,12 @@ export default {
            LoginService.login(loginData).then(response => {
                console.log(response.status)
                if(response.status == 200){
-                   this.$router.push('/home')
+                  localStorage.setItem('id', response.data.id )
+                  localStorage.setItem('name', response.data.name )
+                  localStorage.setItem('email', response.data.email )
+                  console.log(localStorage.getItem('name'))
+
+                  this.$router.push('/home')
                }
            }) 
        }
