@@ -7,11 +7,6 @@
         expand-on-hover
       >
         <v-list>
-          <v-list-item class="px-2">
-            <v-list-item-avatar>
-              <v-img src="https://randomuser.me/api/portraits/women/85.jpg"></v-img>
-            </v-list-item-avatar>
-          </v-list-item>
 
           <v-list-item link>
             <v-list-item-content>
@@ -41,7 +36,7 @@
             </v-list-item-icon>
             <v-list-item-title>Agregar Item</v-list-item-title>
           </v-list-item>
-          <v-list-item link to="/home">
+          <v-list-item link to="/home/logs">
             <v-list-item-icon>
               <v-icon>mdi-account-multiple</v-icon>
             </v-list-item-icon>
