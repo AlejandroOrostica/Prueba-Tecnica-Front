@@ -71,9 +71,14 @@ export default {
         })
     },
     toDetail(row){
-
+      // console.log(row)
       this.$root.$emit('eventing', row);
-      this.$router.push({ name: 'Edit' })
+      let data = {
+        id: row.id
+      }
+      // let path = '/edit/' + row.id
+      // console.log(path)
+      this.$router.push({ name:'Edit', params: data })
 
     }
   },
