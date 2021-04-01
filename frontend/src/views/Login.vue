@@ -5,8 +5,8 @@
             <v-layout align-center justify-center>
                <v-flex xs12 sm8 md4>
                   <v-card class="elevation-12">
-                     <v-toolbar dark color="primary">
-                        <v-toolbar-title>Login form</v-toolbar-title>
+                     <v-toolbar dark color="indigo darken-2">
+                        <v-toolbar-title>Iniciar Sesión</v-toolbar-title>
                      </v-toolbar>
                      <v-card-text>
                         <v-form>
@@ -27,7 +27,7 @@
                      </v-card-text>
                      <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn color="primary" @click="sendData()">Login</v-btn>
+                        <v-btn class="white--text"  color="indigo darken-2"  @click="sendData()">Login</v-btn>
                      </v-card-actions>
                   </v-card>
                </v-flex>
