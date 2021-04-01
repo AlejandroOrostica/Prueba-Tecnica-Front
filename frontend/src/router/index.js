@@ -16,16 +16,16 @@ const routes = [
     name: "login",
     component: Login,
   },
-  
+
   {
     path: "/home",
     name: "Home",
-    component : Home,
+    component: Home,
     children: [
       {
         path: "products",
         name: "Products",
-        component: Products,      
+        component: Products,
       },
       {
         path: "logs",
@@ -38,9 +38,14 @@ const routes = [
         component: AddProduct,
       },
       {
-        path: "edit",
+        path: "edit/:id",
         name: "Edit",
         component: EditProduct,
+      },
+      {
+        path: "logs",
+        name: "Logs",
+        component: Logs,
       }
     ]
   },
