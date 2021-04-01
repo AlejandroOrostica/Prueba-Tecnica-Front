@@ -32,6 +32,7 @@
       :items="items"
       label="Estado"
       v-model="state"
+      disabled
     ></v-select>
 
     <v-btn
@@ -48,7 +49,7 @@
       class="mr-4"
       @click="reset"
     >
-      Reset Form
+      Limpiar Formulario
     </v-btn>
   </v-form>
       </v-card-text>
@@ -65,7 +66,7 @@
       valid: true,
       name: '',
       description: '',
-      state: '',
+      state: 'Ingresado',
       select: 'Ingresado',
       items: [
         'Ingresado',
